@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        var fruits=["banana","Apple","mango"];
+        function bodyload(){
+            document.getElementById("fruits").innerHTML=fruits;
+        }
+        function addClick(){
+            var  fruit=prompt("add Your favourite fruit");
+            fruits[fruits.length]=fruit;
+            document.getElementById("fruits").innerHTML=fruits;
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <button onclick="addClick()">Add Your Favorite Fruits</button>
+    <p id="fruits"></p>
+    
+</body>
+</html>
